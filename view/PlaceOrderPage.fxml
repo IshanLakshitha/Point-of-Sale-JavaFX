@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="560.0" style="-fx-background-color: #3C3C3C;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.controllers.PlaceOrderFormController">
+   <children>
+      <Button layoutX="447.0" layoutY="14.0" mnemonicParsing="false" onAction="#ClickBack" prefHeight="25.0" prefWidth="99.0" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="22.0" layoutY="223.0" mnemonicParsing="false" onAction="#ClickAddButton" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #7A7A7A;" text="Add" textFill="WHITE" />
+      <Button fx:id="btnRemove" layoutX="447.0" layoutY="223.0" mnemonicParsing="false" onAction="#ClickRemoveButton" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #7A7A7A;" text="Delete" textFill="WHITE" />
+      <TextField fx:id="txtCustomerID" layoutX="121.0" layoutY="69.0" onAction="#EnterCustomerIDtxt" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="18.0" layoutY="74.0" text="Customer ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TableView fx:id="tblOrderDetails" layoutX="17.0" layoutY="263.0" prefHeight="184.0" prefWidth="528.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="Item Code" />
+          <TableColumn prefWidth="144.0" text="Description" />
+            <TableColumn prefWidth="102.0" text="Unit Price" />
+            <TableColumn prefWidth="87.0" text="Qty" />
+            <TableColumn prefWidth="98.0" text="Total" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtOrderID" layoutX="95.0" layoutY="14.0" prefHeight="26.0" prefWidth="90.0" />
+      <Label layoutX="17.0" layoutY="19.0" text="Order ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="247.0" layoutY="18.0" prefHeight="17.0" prefWidth="43.0" text="Date :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtCustomerName" layoutX="392.0" layoutY="69.0" prefHeight="26.0" prefWidth="152.0" />
+      <Label layoutX="268.0" layoutY="74.0" prefHeight="17.0" prefWidth="120.0" text="Customer Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtItemCode" layoutX="107.0" layoutY="110.0" onAction="#EnterItemCodetxt" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="21.0" layoutY="115.0" text="Item Code :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtItemDescription" layoutX="365.0" layoutY="109.0" prefHeight="26.0" prefWidth="179.0" />
+      <Label layoutX="268.0" layoutY="114.0" prefHeight="17.0" prefWidth="99.0" text="Description" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtUnitPrice" layoutX="110.0" layoutY="184.0" prefHeight="26.0" prefWidth="99.0" />
+      <Label layoutX="23.0" layoutY="189.0" text="Unit Price :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="317.0" layoutY="156.0" text="Quantity in Hand :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txtQuantityInHand" layoutX="445.0" layoutY="151.0" prefHeight="26.0" prefWidth="99.0" />
+      <TextField fx:id="txtOrderQuantity" layoutX="445.0" layoutY="184.0" onAction="#pressEnterOnOrderquantity" prefHeight="26.0" prefWidth="99.0" />
+      <Label layoutX="317.0" layoutY="189.0" text="Order Qyt :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="463.0" text="Order Total :" />
+      <Button fx:id="btnPlaceOder" layoutX="447.0" layoutY="458.0" mnemonicParsing="false" onAction="#ClickPlaceOrder" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #285880;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="lblTotal" layoutX="110.0" layoutY="463.0" prefHeight="16.0" prefWidth="106.0" />
+      <DatePicker fx:id="DatePickerBox" layoutX="290.0" layoutY="15.0" prefHeight="25.0" prefWidth="134.0" />
+   </children>
+</AnchorPane>

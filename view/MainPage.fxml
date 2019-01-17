@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: #3C3C3C;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.fx.controllers.MainPageController">
+   <children>                                                                                                                                                                             
+      <Button fx:id="btnManageCustomers" layoutX="51.0" layoutY="90.0" mnemonicParsing="false" onAction="#clickManageCustomers" prefHeight="118.0" prefWidth="147.0" style="-fx-background-color: #7A7A7A;" text="Manage Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="257.0" layoutY="90.0" mnemonicParsing="false" onAction="#ClickManageitems" prefHeight="118.0" prefWidth="147.0" style="-fx-background-color: #7A7A7A;" text="Manage Items" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="51.0" layoutY="249.0" mnemonicParsing="false" onAction="#ClickPlaceOrder" prefHeight="118.0" prefWidth="147.0" style="-fx-background-color: #7A7A7A;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="257.0" layoutY="249.0" mnemonicParsing="false" onAction="#clickViewOrders" prefHeight="118.0" prefWidth="147.0" style="-fx-background-color: #7A7A7A;" text="View Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="363.0" layoutY="13.0" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #4D7A97;" text="Logout">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#clickOnSettingButton" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #4D7A97;" text="Settings">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
